@@ -9,6 +9,8 @@
 import random as rnd
 from sys import argv
 
+__all__ = ['game']
+
 
 def game(start: int=1, end: int=4, tries: int=3) -> bool:
     random_num = rnd.randint(start, end)

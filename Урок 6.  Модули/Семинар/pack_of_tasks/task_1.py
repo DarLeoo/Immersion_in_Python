@@ -7,6 +7,8 @@
 """
 import random as rnd
 
+__all__ = ['game']
+
 
 def game(start: int, end: int, tries: int) -> bool:
     random_num = rnd.randint(start, end)
