@@ -18,7 +18,8 @@ current_value - текущая стоимость портфеля акций.
 (stocks: dict, prices: dict) -> str принимает два аргумента:
 stocks - словарь с акциями и их количеством.
 prices - словарь с акциями и их текущими ценами.
-Функция должна вернуть символ акции (ключ), которая имеет наибольшую прибыль по сравнению с ее начальной
+Функция должна вернуть символ акции (ключ), которая имеет наибольшую прибыль по сравнению
+с ее начальной
 стоимостью.Начальная стоимость - первый вызов calculate_portfolio_value,
 данные из этого вызова следует сохранить в защищенную переменную науровне модуля.
 
@@ -36,26 +37,29 @@ start_value = dict()
 
 
 def calculate_portfolio_value(stocks: dict, prices: dict) -> float:
+    """Расчёт общей стоимости портфеля"""
     if len(start_value) == 0:
         for i, j in prices.items():
             start_value[i] = j
-    sum = 0
+    sums = 0
     for key_stock, value_stock in stocks.items():
-        sum += value_stock * prices[key_stock]
-    return sum
+        sums += value_stock * prices[key_stock]
+    return sums
 
 
 def calculate_portfolio_return(initial_value: float, current_value: float) -> float:
+    """Расчет доходности портфеля"""
     res = round((current_value - initial_value)/initial_value*100, 2)
     return res
 
 
 def get_most_profitable_stock(stocks: dict, prices: dict)-> str:
+    """Поиск самой выгодной акции"""
     res = list(stocks.keys())[0]
-    max = prices[list(stocks.keys())[0]] - start_value[list(stocks.keys())[0]]
+    max_val = prices[list(stocks.keys())[0]] - start_value[list(stocks.keys())[0]]
     for key, value in prices.items():
-        if value - start_value[key] > max:
-            res, max = key, value - start_value[key]
+        if value - start_value[key] > max_val:
+            res, max_val = key, value - start_value[key]
     return res
 
 

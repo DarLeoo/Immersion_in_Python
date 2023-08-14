@@ -9,7 +9,7 @@ price_current = {"AAPL": 13333.25, "GOOGL": 26300.75, "MSFT": 8030.50}
 start_sum_value = pt.calculate_portfolio_value(stock, price_initial)
 current_sum_value = pt.calculate_portfolio_value(stock, price_current)
 print(f'Начальная стоимость портфеля акции: {pt.calculate_portfolio_value(stock, price_initial)}')
-print(f'Текущаяя стоимость портфеля акции: {current_sum_value}')
+print(f'Текущая стоимость портфеля акции: {current_sum_value}')
 profitability = pt.calculate_portfolio_return(start_sum_value, current_sum_value)
 print(f'Доходность портфеля: {profitability} %')
 max_value = pt.get_most_profitable_stock(stock, price_current)
