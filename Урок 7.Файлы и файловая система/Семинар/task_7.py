@@ -3,3 +3,18 @@
 ✔ Каждая группа включает файлы с несколькими расширениями.
 ✔ В исходной папке должны остаться только те файлы, которые не подошли для сортировки.
 """
+from os import chdir, listdir, mkdir, replace, getcwd
+from pathlib import Path
+
+
+def sort_files(directory: str | Path = 'est_dir'):
+    """Функция сортировки файлов на DOC, PDF, TXT"""
+    chdir(directory)
+    print(listdir())
+    for file in Path(getcwd()).iterdir():
+        if file.is_dir():
+            continue
+        ext = file.name.split('.')[1]
+        if ext.upper() not in listdir():
+            mkdir(ext.upper())
+        file.replace(f'{ext.upper()}\\{file.name}')
