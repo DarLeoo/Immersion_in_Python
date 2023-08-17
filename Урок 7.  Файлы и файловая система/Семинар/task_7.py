@@ -5,6 +5,7 @@
 """
 from os import chdir, listdir, mkdir, replace, getcwd
 from pathlib import Path
+__all__ = ['sort_files']
 
 
 def sort_files(directory: str | Path = 'est_dir'):

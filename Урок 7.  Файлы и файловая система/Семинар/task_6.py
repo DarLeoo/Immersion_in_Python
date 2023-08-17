@@ -7,6 +7,7 @@
 """
 from os import getcwd, listdir,mkdir
 from random import randint, choice
+__all__ = ['create_files_chose_dir']
 
 
 def set_name(min_len, max_len) -> str:
@@ -17,9 +18,9 @@ def set_name(min_len, max_len) -> str:
     return name.capitalize()
 
 
-def create_files(ext: str, directory: str = '', min_len: int = 6,
-                 max_len: int = 30, min_size: int = 256,
-                 max_size: int = 4096, count_files: int = 42):
+def create_files_chose_dir(ext: str, directory: str = '', min_len: int = 6,
+                           max_len: int = 30, min_size: int = 256,
+                           max_size: int = 4096, count_files: int = 42):
     """Создание файла"""
     if not directory:
         directory = getcwd() + '\\'
@@ -37,4 +38,4 @@ def create_files(ext: str, directory: str = '', min_len: int = 6,
 
 if __name__ == "__main__":
     EXTINSIONS = ['.pdf', '.csv', '.txt', '.doc']
-    create_files(ext=choice(EXTINSIONS), directory='test_dir', count_files=58)
+    create_files_chose_dir(ext=choice(EXTINSIONS), directory='test_dir', count_files=58)

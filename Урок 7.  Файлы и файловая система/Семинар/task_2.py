@@ -7,6 +7,7 @@
 ✔ Полученные имена сохраните в файл.
 """
 from random import randint
+__all__ = ['create_file', 'set_name']
 
 
 def set_name() -> str:

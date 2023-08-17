@@ -12,6 +12,7 @@
 ✔ При достижении конца более короткого файла,
 возвращайтесь в его начало.
 """
+__all__ = ['read_and_write']
 
 
 def read_and_write(numbers_file: str,
