@@ -16,17 +16,6 @@ rename(wanted_name = "video", count_nums=3,
  extension_old=".txt", extension_new=".csv", diapazon=[3, 6])
 foto_2002.txt -> o_20video001.csv
 """
-
-
-# def rename_files(new_name: str,
-#                  num_of_digits: int,
-#                  extension_old: str,
-#                  extension_new: str,
-#                  span: list):
-#     pass
-
-# __all__ = ['rename_file']
-
 from pathlib import Path
 
 __all__ = ['rename_file']
