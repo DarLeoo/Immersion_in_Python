@@ -1,0 +1,18 @@
+name,type,size,files,parent
+Домашняя работа,folder,,6,
+info_dir.csv,file,635,,Домашняя работа
+info_dir.json,file,2913,,Домашняя работа
+README.MD,file,1234,,Домашняя работа
+task_1.py,file,2519,,Домашняя работа
+task_2.py,file,0,,Домашняя работа
+task_3.py,file,0,,Домашняя работа
+Семинар,folder,,9,
+README.MD,file,2594,,Семинар
+task_1.py,file,946,,Семинар
+task_2.py,file,1819,,Семинар
+task_3.py,file,881,,Семинар
+task_4.py,file,1401,,Семинар
+task_4_users.json,file,241,,Семинар
+task_5.py,file,700,,Семинар
+users.csv,file,34,,Семинар
+users.json,file,128,,Семинар

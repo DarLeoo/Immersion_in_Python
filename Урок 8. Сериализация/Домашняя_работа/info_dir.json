@@ -1,0 +1,121 @@
+[
+    {
+        "name": "\u0414\u043e\u043c\u0430\u0448\u043d\u044f\u044f \u0440\u0430\u0431\u043e\u0442\u0430",
+        "type": "folder",
+        "size": null,
+        "files": 6,
+        "parent": null
+    },
+    {
+        "name": "info_dir.csv",
+        "type": "file",
+        "size": 635,
+        "files": null,
+        "parent": "\u0414\u043e\u043c\u0430\u0448\u043d\u044f\u044f \u0440\u0430\u0431\u043e\u0442\u0430"
+    },
+    {
+        "name": "info_dir.json",
+        "type": "file",
+        "size": 2913,
+        "files": null,
+        "parent": "\u0414\u043e\u043c\u0430\u0448\u043d\u044f\u044f \u0440\u0430\u0431\u043e\u0442\u0430"
+    },
+    {
+        "name": "README.MD",
+        "type": "file",
+        "size": 1234,
+        "files": null,
+        "parent": "\u0414\u043e\u043c\u0430\u0448\u043d\u044f\u044f \u0440\u0430\u0431\u043e\u0442\u0430"
+    },
+    {
+        "name": "task_1.py",
+        "type": "file",
+        "size": 2519,
+        "files": null,
+        "parent": "\u0414\u043e\u043c\u0430\u0448\u043d\u044f\u044f \u0440\u0430\u0431\u043e\u0442\u0430"
+    },
+    {
+        "name": "task_2.py",
+        "type": "file",
+        "size": 0,
+        "files": null,
+        "parent": "\u0414\u043e\u043c\u0430\u0448\u043d\u044f\u044f \u0440\u0430\u0431\u043e\u0442\u0430"
+    },
+    {
+        "name": "task_3.py",
+        "type": "file",
+        "size": 0,
+        "files": null,
+        "parent": "\u0414\u043e\u043c\u0430\u0448\u043d\u044f\u044f \u0440\u0430\u0431\u043e\u0442\u0430"
+    },
+    {
+        "name": "\u0421\u0435\u043c\u0438\u043d\u0430\u0440",
+        "type": "folder",
+        "size": null,
+        "files": 9,
+        "parent": null
+    },
+    {
+        "name": "README.MD",
+        "type": "file",
+        "size": 2594,
+        "files": null,
+        "parent": "\u0421\u0435\u043c\u0438\u043d\u0430\u0440"
+    },
+    {
+        "name": "task_1.py",
+        "type": "file",
+        "size": 946,
+        "files": null,
+        "parent": "\u0421\u0435\u043c\u0438\u043d\u0430\u0440"
+    },
+    {
+        "name": "task_2.py",
+        "type": "file",
+        "size": 1819,
+        "files": null,
+        "parent": "\u0421\u0435\u043c\u0438\u043d\u0430\u0440"
+    },
+    {
+        "name": "task_3.py",
+        "type": "file",
+        "size": 881,
+        "files": null,
+        "parent": "\u0421\u0435\u043c\u0438\u043d\u0430\u0440"
+    },
+    {
+        "name": "task_4.py",
+        "type": "file",
+        "size": 1401,
+        "files": null,
+        "parent": "\u0421\u0435\u043c\u0438\u043d\u0430\u0440"
+    },
+    {
+        "name": "task_4_users.json",
+        "type": "file",
+        "size": 241,
+        "files": null,
+        "parent": "\u0421\u0435\u043c\u0438\u043d\u0430\u0440"
+    },
+    {
+        "name": "task_5.py",
+        "type": "file",
+        "size": 700,
+        "files": null,
+        "parent": "\u0421\u0435\u043c\u0438\u043d\u0430\u0440"
+    },
+    {
+        "name": "users.csv",
+        "type": "file",
+        "size": 34,
+        "files": null,
+        "parent": "\u0421\u0435\u043c\u0438\u043d\u0430\u0440"
+    },
+    {
+        "name": "users.json",
+        "type": "file",
+        "size": 128,
+        "files": null,
+        "parent": "\u0421\u0435\u043c\u0438\u043d\u0430\u0440"
+    }
+]

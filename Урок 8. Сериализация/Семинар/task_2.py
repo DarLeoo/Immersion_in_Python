@@ -11,6 +11,8 @@
 # должны сохраняться.
 import json
 
+__all__ = ['add_user']
+
 
 def uniq_id(data: dict, id: str) -> bool:
     """Проверка id пользователя"""
