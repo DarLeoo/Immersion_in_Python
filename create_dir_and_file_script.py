@@ -23,4 +23,5 @@ def create_file():
         my_file.close()
 
 
-create_dir(), create_file()
+if __name__ == '__main__':
+    create_dir(), create_file()
