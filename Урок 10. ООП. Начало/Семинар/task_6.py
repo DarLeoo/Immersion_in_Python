@@ -1,0 +1,65 @@
+"""
+Доработайте задачу 5.
+Вынесите общие свойства и методы классов в класс
+Животное.
+Остальные классы наследуйте от него.
+Убедитесь, что в созданные ранее классы внесены правки.
+"""
+class Animal:
+    def __init__(self, name, age):
+        self.name = name.capitalize()
+        self.age = age
+
+    def __str__(self):
+        return f'{self.name} {self.age}'
+
+    def birthday(self):
+        self.age =+ 1
+
+class Dog(Animal):
+    def __init__(self, name, age,  color: str, breed: str, is_domestic: bool = True) -> None:
+        super().__init__(name, age)
+        self.color = color
+        self.breed = breed
+        self.is_domestic = is_domestic
+
+    def __str__(self):
+        if self.is_domestic:
+            return f'Собака {self.color} {self.breed} домашняя'
+        return f'Собака {self.color} {self.breed} дворняга'
+
+
+class Kotopes(Animal):
+    def __init__(self, age, name, number_heads: int = 2) -> None:
+        super().__init__(name, age)
+        self.__number_heads = number_heads
+
+    def __str__(self):
+        return f'Kotopes -> number_heads: {self.__number_heads}, Возраст {self.age} '
+
+
+class Fish(Animal):
+    def __init__(self, name, age, aqua, size):
+        super().__init__(name, age)
+        self.aqua = aqua
+        self.size = size
+
+    def __str__(self):
+        if self.aqua:
+            return f'{self.name} морская'
+        else:
+            return f'{self.name} пресноводная'
+
+
+if __name__ == '__main__':
+    dog = Dog('Роки', 3, 'черный', 'мопс', True)
+    dog2 = Dog('Барсик', 5, 'рыжий', 'французский бульдог', False)
+    print(dog,'|',dog2)
+    print(Kotopes(age=11, name='Miracle', number_heads=2))
+    f1 = Fish("Дори",  1, True, 2)
+    kt1 = Kotopes(3 , "котопес", 2)
+    print(dog)
+    print(f1)
+    print(kt1)
+    kt1.birthday()
+    print(kt1)
