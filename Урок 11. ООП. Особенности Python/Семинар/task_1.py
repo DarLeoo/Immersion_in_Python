@@ -8,7 +8,9 @@ import time
 
 
 class My_str(str):
+    """'Наследуемый класс от str."""
     def __new__(cls, value: str, name: str):
+        """Расширение класса свойствами значением и именем автора"""
         instance = super().__new__(cls, value)
         instance.name = name
         instance.value = value
@@ -16,6 +18,7 @@ class My_str(str):
         return instance
 
     def __repr__(self):
+        """Метод строчного выведения экземпляра класса"""
         return f'Mystr({self.value=}, {self.name=}, {self.time_create=})'
 
 
