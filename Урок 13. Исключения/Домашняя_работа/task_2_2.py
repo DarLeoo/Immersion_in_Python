@@ -7,7 +7,7 @@
 Если при создании экземпляра передаётся только одна
 сторона, считаем что у нас квадрат.
 """
-from task_1 import RectangleError
+from task_2 import RectangleError
 
 
 class Rectangle:

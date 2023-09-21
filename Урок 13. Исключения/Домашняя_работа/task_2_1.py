@@ -5,7 +5,7 @@
 У класса должно быть два метода, возвращающие длину
 окружности и её площадь.
 """
-from task_1 import RadiusError
+from task_2 import RadiusError
 import math
 
 
